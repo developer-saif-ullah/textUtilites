@@ -1,5 +1,5 @@
 import React from "react";
-import PropTypes from 'prop-types'
+import PropTypes from "prop-types";
 
 const NavBar = (props) => {
   return (
@@ -12,15 +12,14 @@ const NavBar = (props) => {
         <ul className="navbar-nav">
           <li className="nav-item">
             <a className="nav-link" href="/">
-            {props.home}
+              {props.home}
             </a>
           </li>
           <li className="nav-item">
             <a className="nav-link" href="/">
-            {props.about}
+              {props.about}
             </a>
           </li>
-
         </ul>
       </nav>
     </div>
@@ -28,16 +27,16 @@ const NavBar = (props) => {
 };
 
 NavBar.propTypes = {
-    title: PropTypes.string,
-    about: PropTypes.string,
-    home: PropTypes.string
-}
+  title: PropTypes.string,
+  about: PropTypes.string,
+  home: PropTypes.string,
+};
 
 NavBar.defaultProps = {
-    title: "Set Title",
-    home: "Set Home",
-    about: "Set About",
-    titlehref: "/"
-}
+  title: "Set Title",
+  home: "Set Home",
+  about: "Set About",
+  titlehref: "/",
+};
 
 export default NavBar;
